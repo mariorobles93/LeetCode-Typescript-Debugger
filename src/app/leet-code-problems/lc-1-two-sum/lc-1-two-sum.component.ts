@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import {TuiButtonModule} from "@taiga-ui/core";
 
+/**
+ * Link: https://leetcode.com/problems/two-sum/
+ * Title: 1. Two Sum
+ * Difficulty: Easy
+ */
 @Component({
   selector: 'app-lc-1-two-sum',
   standalone: true,
@@ -13,16 +18,15 @@ import {TuiButtonModule} from "@taiga-ui/core";
 export class Lc1TwoSumComponent {
 
   twoSum(nums: number[], target: number): number[] {
-    const memo: any = {};
-    for(let i=0; i < nums.length; i++){
-      const possibleSecondNumber = target - nums[i];
-
-      if(memo[possibleSecondNumber] !== undefined){
-        return [memo[possibleSecondNumber], i];
+    let hashTable : any = {};
+    for(let i = 0; i < nums.length; i++){
+      let remainder = target - nums[i];
+      if(hashTable[remainder] !== undefined){
+        return [hashTable[remainder], i]
       }
-
-      memo[nums[i]]=i;
+      hashTable[nums[i]] = i;
     }
+
     return [];
   };
 }
