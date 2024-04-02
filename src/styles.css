@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .dark-background{
   background-color: #333333;
+}
+
+.easy{
+  --tui-primary: var(--tui-positive);
+}
+
+.medium{
+  --tui-secondary: var(--tui-warning-fill);
+}
+
+.hard{
+  --tui-accent: var(--tui-negative);
 }
