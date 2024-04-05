@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-background{
+  background-color: #333333;
+}
+
+.easy{
+  --tui-primary: var(--tui-positive);
+  --tui-primary-text: var(--tui-text-02-night);
+  --tui-primary-hover: var(--tui-positive-hover) ;
+}
+
+.medium{
+  --tui-primary: var(--tui-warning-fill);
+  --tui-primary-text: var(--tui-base-09);
+  --tui-primary-hover: var(--tui-support-11);
+}
+
+.hard{
+  --tui-primary: var(--tui-negative);
+  --tui-primary-text: var(--tui-text-02-night);
+  --tui-primary-hover: var(--tui-negative-hover) ;
+}
