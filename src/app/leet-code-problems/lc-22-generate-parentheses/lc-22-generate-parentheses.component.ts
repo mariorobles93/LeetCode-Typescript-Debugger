@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
 import {TuiButtonModule} from "@taiga-ui/core";
 
+/**
+ * Link: https://leetcode.com/problems/generate-parentheses/description/
+ * Title: 222. Generate Parentheses
+ * Difficulty: Medium
+ * Topics:
+ * String
+ * Dynamic Programming
+ * Backtracking
+ */
 @Component({
   selector: 'app-lc-22-generate-parentheses',
   standalone: true,
